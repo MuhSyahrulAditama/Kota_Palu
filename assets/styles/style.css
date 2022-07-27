@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Nunito&family=Open+Sans:wght@500&family=Quicksand:wght@400;700&display=swap');
+
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+body {
+    font-family: "Quicksand", sans-serif;
+    padding: 0; margin: 0;
+    background-color: #FFFFDE;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+header {
+    display: inline;
+}
+
+h2, h3 {
+    color: #C499BA;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #F4E06D;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header{
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    padding: 60px;
+    background-color: #FF7396;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 15px;
+}
+@media screen and (max-width: 1000px) {
+    #content, aside  {
+      width: 100%;
+    }
+  }
